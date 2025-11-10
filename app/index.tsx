@@ -5,6 +5,7 @@ import LibraryScreen from "../screen/LibraryScreen"
 import PlaylistScreen from "../screen/PlaylistScreen"
 import ProfileScreen from "../screen/ProfileScreen"
 import Feather from '@expo/vector-icons/Feather';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,11 +53,7 @@ export default function Index() {
           headerShown: false,
           tabBarIcon: ({ color, }) => (
             <View>
-              <Feather
-                name="list"
-                size={28}
-                color={color}
-              />
+             <FontAwesome name="microphone" size={24} color={color} />
             </View>
           ),
           tabBarShowLabel: true,
